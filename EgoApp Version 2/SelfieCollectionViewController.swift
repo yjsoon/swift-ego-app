@@ -11,6 +11,11 @@ import UIKit
 private let reuseIdentifier = "PhotoCell"
 
 class SelfieCollectionViewController: UICollectionViewController {
+    
+    var selfies: [Selfie] = [
+        Selfie(imageName: "aboutme", timeStamp: "Today"),
+        Selfie(imageName: "banana", timeStamp: "Yesterday")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,14 +49,15 @@ class SelfieCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return selfies.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SelfieCollectionViewCell
     
-        cell.photoImageView.image = UIImage(named: "banana")
-        cell.photoLabel.text = "Banana"
+        let i = indexPath.item
+        cell.photoImageView.image = UIImage(named: selfies[i].imageName)
+        cell.photoLabel.text = selfies[i].timeStamp
     
         return cell
     }

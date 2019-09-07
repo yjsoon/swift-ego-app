@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF6D5CDA232341DE0000BD35 /* SelfieCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6D5CD9232341DE0000BD35 /* SelfieCollectionViewController.swift */; };
+		AF6D5CDC232342AB0000BD35 /* Selfie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6D5CDB232342AB0000BD35 /* Selfie.swift */; };
 		AFAB545C23233C6F00ACE4D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB545B23233C6F00ACE4D5 /* AppDelegate.swift */; };
 		AFAB545E23233C6F00ACE4D5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB545D23233C6F00ACE4D5 /* AboutViewController.swift */; };
 		AFAB546123233C6F00ACE4D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFAB545F23233C6F00ACE4D5 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		AF6D5CD9232341DE0000BD35 /* SelfieCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCollectionViewController.swift; sourceTree = "<group>"; };
+		AF6D5CDB232342AB0000BD35 /* Selfie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selfie.swift; sourceTree = "<group>"; };
 		AFAB545823233C6F00ACE4D5 /* EgoApp Version 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EgoApp Version 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAB545B23233C6F00ACE4D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFAB545D23233C6F00ACE4D5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				AFAB545B23233C6F00ACE4D5 /* AppDelegate.swift */,
 				AFAB546D232340E700ACE4D5 /* SelfieCollectionViewCell.swift */,
 				AF6D5CD9232341DE0000BD35 /* SelfieCollectionViewController.swift */,
+				AF6D5CDB232342AB0000BD35 /* Selfie.swift */,
 				AFAB545D23233C6F00ACE4D5 /* AboutViewController.swift */,
 				AFAB545F23233C6F00ACE4D5 /* Main.storyboard */,
 				AFAB546223233C7200ACE4D5 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFAB546E232340E700ACE4D5 /* SelfieCollectionViewCell.swift in Sources */,
+				AF6D5CDC232342AB0000BD35 /* Selfie.swift in Sources */,
 				AFAB545E23233C6F00ACE4D5 /* AboutViewController.swift in Sources */,
 				AF6D5CDA232341DE0000BD35 /* SelfieCollectionViewController.swift in Sources */,
 				AFAB545C23233C6F00ACE4D5 /* AppDelegate.swift in Sources */,
