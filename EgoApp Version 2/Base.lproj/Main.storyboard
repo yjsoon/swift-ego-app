@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fdL-In-g4U">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--About View Controller-->
+        <!--About Me-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AboutViewController" customModule="EgoApp_Version_2" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,6 +46,7 @@
                             <outletCollection property="gestureRecognizers" destination="0DO-tw-Tyt" appends="YES" id="N2F-JQ-XoR"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="About Me" image="aboutme" id="a2A-vi-oE3"/>
                     <connections>
                         <outlet property="imageLabel" destination="oib-ic-93d" id="Fwt-WT-jJC"/>
                         <outlet property="titleLabel" destination="Bx0-EG-yyl" id="xhy-Qe-vbl"/>
@@ -58,9 +59,68 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="-3.3482142857142856"/>
+        </scene>
+        <!--My Selfies-->
+        <scene sceneID="UZo-JB-Eka">
+            <objects>
+                <collectionViewController id="u8P-hx-zAG" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="4Zg-aN-2NU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eNf-sw-T3e">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IGe-u7-ocU">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="u8P-hx-zAG" id="xws-98-7WM"/>
+                            <outlet property="delegate" destination="u8P-hx-zAG" id="lNF-bS-24d"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="My Selfies" image="gallery" id="3eK-ea-awa"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jci-Ov-iyb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="692"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OHm-rl-0qX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fdL-In-g4U" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VX5-7f-CcY">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.89099609369999999" green="0.61498300949999996" blue="0.37291725799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.88056090300000001" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.89099609369999999" green="0.61498300949999996" blue="0.37291725799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PxM-iF-1Hd"/>
+                        <segue destination="u8P-hx-zAG" kind="relationship" relationship="viewControllers" id="brT-LY-4pS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPf-5P-acc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="-3.3482142857142856"/>
         </scene>
     </scenes>
     <resources>
+        <image name="aboutme" width="24" height="24"/>
         <image name="banana" width="500" height="500"/>
+        <image name="gallery" width="24" height="24"/>
     </resources>
 </document>
