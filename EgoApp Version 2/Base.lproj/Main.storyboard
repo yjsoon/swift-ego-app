@@ -119,7 +119,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="It's My Photos Meeee" id="v2m-kO-0BP">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="dYE-EP-xjG"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="dYE-EP-xjG">
+                            <connections>
+                                <action selector="cameraButtonTapped:" destination="u8P-hx-zAG" id="kuF-gs-Tep"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jci-Ov-iyb" userLabel="First Responder" sceneMemberID="firstResponder"/>

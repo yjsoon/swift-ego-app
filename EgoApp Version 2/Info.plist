@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Because I want to take selfies for you</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Because you took a photo of your own and want to add it</string>
 </dict>
 </plist>
