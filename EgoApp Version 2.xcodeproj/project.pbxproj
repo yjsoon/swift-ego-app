@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF6D5CDA232341DE0000BD35 /* SelfieCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6D5CD9232341DE0000BD35 /* SelfieCollectionViewController.swift */; };
 		AFAB545C23233C6F00ACE4D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB545B23233C6F00ACE4D5 /* AppDelegate.swift */; };
 		AFAB545E23233C6F00ACE4D5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB545D23233C6F00ACE4D5 /* AboutViewController.swift */; };
 		AFAB546123233C6F00ACE4D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFAB545F23233C6F00ACE4D5 /* Main.storyboard */; };
 		AFAB546323233C7200ACE4D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFAB546223233C7200ACE4D5 /* Assets.xcassets */; };
 		AFAB546623233C7200ACE4D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFAB546423233C7200ACE4D5 /* LaunchScreen.storyboard */; };
+		AFAB546E232340E700ACE4D5 /* SelfieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB546D232340E700ACE4D5 /* SelfieCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF6D5CD9232341DE0000BD35 /* SelfieCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCollectionViewController.swift; sourceTree = "<group>"; };
 		AFAB545823233C6F00ACE4D5 /* EgoApp Version 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EgoApp Version 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAB545B23233C6F00ACE4D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFAB545D23233C6F00ACE4D5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		AFAB546223233C7200ACE4D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFAB546523233C7200ACE4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFAB546723233C7200ACE4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFAB546D232340E700ACE4D5 /* SelfieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				AFAB545B23233C6F00ACE4D5 /* AppDelegate.swift */,
+				AFAB546D232340E700ACE4D5 /* SelfieCollectionViewCell.swift */,
+				AF6D5CD9232341DE0000BD35 /* SelfieCollectionViewController.swift */,
 				AFAB545D23233C6F00ACE4D5 /* AboutViewController.swift */,
 				AFAB545F23233C6F00ACE4D5 /* Main.storyboard */,
 				AFAB546223233C7200ACE4D5 /* Assets.xcassets */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAB546E232340E700ACE4D5 /* SelfieCollectionViewCell.swift in Sources */,
 				AFAB545E23233C6F00ACE4D5 /* AboutViewController.swift in Sources */,
+				AF6D5CDA232341DE0000BD35 /* SelfieCollectionViewController.swift in Sources */,
 				AFAB545C23233C6F00ACE4D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
